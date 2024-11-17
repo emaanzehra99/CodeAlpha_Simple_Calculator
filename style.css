@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+}
+
+.project-name {
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 80px;
+    color: white;
+    background-color: #2660A4;
+    transition: all 2s ease-in;
+}
+
+.code-alpha {
+    border: 2px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 40px;
+    justify-content: center;
+    margin-left: 1000px;
+    color: black;
+    background-color: #EDF7F6;
+    transition: all 2s ease-in;
+}
+
+p {
+    font-weight: bolder;
+    font-family:'Times New Roman', Times, serif;
+}
+
+@keyframes colorAnimation1 {
+    from {
+        background-color: #2660A4;
+    }
+    to {
+        background-color: #EDF7F6;
+        color: black;
+    }
+}
+
+@keyframes colorAnimation2 {
+    from {
+        background-color: #EDF7F6;
+    }
+    to {
+        background-color: #2660A4;
+        color: white;
+    }
+}
+
+
+.project-name:hover {
+    transform: translate(100px, 80px);
+    animation: colorAnimation1 2s ease-out 1s infinite normal;
+}
+
+.code-alpha:hover {
+    transform: translate(80px, 50px);
+    animation: colorAnimation2 2s ease-out 1s infinite normal;
+}
+
+.back-img {
+    background-image: url(pic1.png);
+    background-size: cover;
+    height: 1000px;
+}
+
+h1 {
+     margin-left: 500px;
+     margin-top: 50px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.calc-container {
+    width: 100%;
+    height: 100px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: #412234;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    box-shadow: -9px -9px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(255, 255, 255, 0.2);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.display-bx {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.display-bx input {
+    text-align: right;
+    flex: 1;
+    font-size: 50px;
+    box-shadow: none;
+}
+
+form input.equals-opt {
+    width: 149px;
+}
+
+.container-opts {
+    font-weight: bolder;
+}
+
+form input.row-1 {
+    background-color:#E39774;
+    color: black;
+}
+
+
