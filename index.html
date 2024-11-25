@@ -21,27 +21,48 @@
         <br>
         <br>
         <br>
-        <div class="calculator">
-        <input id="display" readonly>
-        <div class="buttons">
-            <button onclick="appendDisplay('+')" class="operator-button">+</button>
-            <button onclick="appendDisplay('7')">7</button>
-            <button onclick="appendDisplay('8')">8</button>
-            <button onclick="appendDisplay('9')">9</button>
-            <button onclick="appendDisplay('-')" class="operator-button">-</button>
-            <button onclick="appendDisplay('4')">4</button>
-            <button onclick="appendDisplay('5')">5</button>
-            <button onclick="appendDisplay('6')">6</button>
-            <button onclick="appendDisplay('*')" class="operator-button">*</button>
-            <button onclick="appendDisplay('1')">1</button>
-            <button onclick="appendDisplay('2')">2</button>
-            <button onclick="appendDisplay('3')">3</button>
-            <button onclick="appendDisplay('/')" class="operator-button">/</button>
-            <button onclick="appendDisplay('0')" class="operator-button">0</button>
-            <button onclick="appendDisplay('.')" class="operator-button">.</button>
-            <button onclick="calculate()" class="operator-button">=</button>
-            <button onclick="clearDisplay()" class="operator-button">C</button>  
+        <div class="calc-container">
+            <div class="calculator">
+                <form>
+                    <div class="display-bx">
+                        <input type="text" name="display" style="background-color: #22577A;">
+                    </div>
+                    <div class="container-opts">
+                        <input type="button" value="AC" onclick = "clearDisplay('')" class="row-1">
+                        <input type="button" value="DE" onclick = "display.value = display.value.toString().slice(0,-1)" class="row-1">
+                        <input type="button" value="." onclick = "appendDisplay('.')" class="row-1">
+                        <input type="button" value="/" onclick = "appendDisplay('/')" class="row-1">
+                    </div>
+                    <div class="container-opts">
+                        <input type="button" value="7" onclick = "appendDisplay('7')">
+                        <input type="button" value="8" onclick = "appendDisplay('8')">
+                        <input type="button" value="9" onclick = "appendDisplay('9')">
+                        <input type="button" value="*" onclick = "appendDisplay('*')" class="row-1">
+                    </div>
+
+                    <div class="container-opts">
+                        <input type="button" value="4" onclick = "appendDisplay('4')">
+                        <input type="button" value="5" onclick = "appendDisplay('5')">
+                        <input type="button" value="6" onclick = "appendDisplay('6')">
+                        <input type="button" value="-" onclick = "appendDisplay('-')" class="row-1">
+                    </div>
+
+                    <div class="container-opts">
+                        <input type="button" value="1" onclick = "appendDisplay('1')">
+                        <input type="button" value="2" onclick = "appendDisplay('2')">
+                        <input type="button" value="3" onclick = "appendDisplay('3')">
+                        <input type="button" value="+" onclick = "appendDisplay('+')" class="row-1">
+                    </div>
+
+                    <div class="container-opts">
+                        <input type="button" value="00" onclick = "appendDisplay('00')">
+                        <input type="button" value="0" onclick = "appendDisplay('0')">
+                        <input type="button" value="=" onclick = "calcresult('=')" class="equals opt row-1">
+                    </div>
+
+
+                </form>
+            </div>
         </div>
-    </div>
 </body>
 </html>
