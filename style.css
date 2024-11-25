@@ -117,4 +117,11 @@ body {
     justify-content: center;
     height: 100vh;
 }
-    
+
+button:hover {
+    background-color: #C75146;
+}
+
+button:active {
+    background-color: #AD2E24;
+}
