@@ -125,3 +125,15 @@ button:hover {
 button:active {
     background-color: #AD2E24;
 }
+
+.operator-button {
+    background-color: #CBF3D2;
+}
+
+.operator-button:hover {
+    background-color: #D0F0C0;
+}
+
+.operator-button:active {
+    background-color: #00ced1;
+}
